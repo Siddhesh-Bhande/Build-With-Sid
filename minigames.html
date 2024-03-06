@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Siddhesh Bhande</title>
+    <link rel="icon" href="assets/images/author-image.jpg" type="image/icon type">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="mainstyle.css" rel="stylesheet" >
+</head>
+  <body>
+    <div class="container" >
+        <h1>Build With Sid</h1>
+        <div class="inline_navbar">
+            <ul class="nav justify-content-end nav-underline">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="minigames.html">Mini Games</a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Aboutme_wraper.html">About me</a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- Create section for blogs and resume -->
+        <div class="row">
+            
+            <div class="sid-section-conatiner col-2 game-links-container">
+                <ul class="nav flex-column nav-underline">
+                    <li class="nav-item">
+                      <a class="nav-link active cglink">Can you count?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mglink">Memory Game</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link shglink">Switch Handler</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+            <div class="sid-section-conatiner col-10">
+                <iframe class="countgame" src="./games/CountTheDots.html" style="width:100%; height: 50em;"></iframe>
+                <iframe class="MemoryGame sid-display-none" src="./games/MemoryGame.html" style="width:100%; height: 50em;"></iframe>
+                <iframe class="SwitchHandler sid-display-none" src="./games/SwitchHandler.html" style="width:100%; height: 50em;"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".cglink").click(function(){
+            $(".active").removeClass("active");
+            $(".cglink").addClass("active");
+            $(".MemoryGame").addClass("sid-display-none");
+            $(".countgame").removeClass("sid-display-none");
+            $(".SwitchHandler").addClass("sid-display-none");
+        });
+        $(".mglink").click(function(){
+            $(".active").removeClass("active");
+            $(".mglink").addClass("active");
+            $(".countgame").addClass("sid-display-none");
+            $(".MemoryGame").removeClass("sid-display-none");
+            $(".SwitchHandler").addClass("sid-display-none");
+        });
+        $(".shglink").click(function(){
+            $(".active").removeClass("active");
+            $(".shglink").addClass("active");
+            $(".countgame").addClass("sid-display-none");
+            $(".SwitchHandler").removeClass("sid-display-none");
+            $(".MemoryGame").addClass("sid-display-none");
+        });
+    });
+</script>
+</body>
+</html>
