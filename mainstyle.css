@@ -106,7 +106,9 @@ span.memorycell {
 .markedCorrectly{
     background-color: green !important;
 }
-
+li.resume-link{
+    display: none;
+}
 /* Custom CSS for inline navbar on all screen sizes */
 @media (max-width: 576px) {
     .header img{
@@ -129,5 +131,10 @@ span.memorycell {
     .sid-section-conatiner.col-10{
         width: 100%;
     }
-    
+    .resume-container{
+        display: none;
+    }
+    .section-heading{
+        padding: 40px 0px !important;
+    }
 }
