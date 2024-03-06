@@ -106,3 +106,28 @@ span.memorycell {
 .markedCorrectly{
     background-color: green !important;
 }
+
+/* Custom CSS for inline navbar on all screen sizes */
+@media (max-width: 576px) {
+    .header img{
+        height: 200px;
+    }
+    span.memorycell {
+        height: 40px;
+        width: 40px;
+        
+    }
+    .game-block-container {
+        text-align: center;
+        width: 356px;
+        margin: auto;
+        border: 4px solid;
+        padding: 16px;
+        margin-top: 32px;
+    }
+
+    .sid-section-conatiner.col-10{
+        width: 100%;
+    }
+    
+}
